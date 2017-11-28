@@ -1,0 +1,76 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport"/>
+        <!-- Angular Material style sheet -->
+        <link href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css" rel="stylesheet">
+        </link>
+        <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js">
+        </script>
+        <script>
+            // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAyf-hEcF7iDWczBX46PfWOwwKhSRYvF6A",
+            authDomain: "arduinofire-3d557.firebaseapp.com",
+            databaseURL: "https://arduinofire-3d557.firebaseio.com",
+            projectId: "arduinofire-3d557",
+            storageBucket: "arduinofire-3d557.appspot.com",
+            messagingSenderId: "149644155530"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i" rel="stylesheet" type="text/css"/>
+        <link href="css/editado.css" media="screen,projection" rel="stylesheet" type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js">
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-aria.min.js">
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-messages.min.js">
+        </script>
+        <!-- Angular Material Library -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.3.0/angularfire.js">
+        </script>
+        <script src="js/app.js">
+        </script>
+        <script src="js/controllers.js">
+        </script>
+    </head>
+    <body ng-app="appArduino" ng-cloak="" ng-controller="indexCtrl">
+        <!-- Angular Material requires Angular.js Libraries -->
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+        <div layout="row" layout-wrap="">
+            <div flex="30">
+            </div>
+            <div flex="40">
+                <section layout="row" layout-align="center center" layout-sm="column" layout-wrap="">
+                    <md-button class="{{clase}}" ng-click="cambiarEstadoLed()">
+                        {{accion}}
+                    </md-button>
+                </section>
+            </div>
+            <div flex="30">
+            </div>
+        </div>
+        <div layout="row" layout-wrap="">
+            <div flex="30">
+            </div>
+            <div flex="40">
+                <section layout="row" layout-align="center center" layout-sm="column" layout-wrap="">
+                    <img ng-src="img/{{ledImg}}.png" style="width: 80px; height: auto">
+                    </img>
+                </section>
+            </div>
+            <div flex="30">
+            </div>
+        </div>
+    </body>
+</html>
